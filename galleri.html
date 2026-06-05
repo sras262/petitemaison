@@ -1,1 +1,121 @@
+```html
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Galleri - Petite Maison</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#faf7f1;
+    color:#2f2a23;
+}
+
+nav{
+    background:#6f7650;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+h1{
+    font-size:60px;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+}
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
+.caption{
+    text-align:center;
+    margin-top:8px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Forside</a>
+<a href="galleri.html">Galleri</a>
+<a href="index.html#kalender">Kalender</a>
+<a href="index.html#kontakt">Kontakt</a>
+</nav>
+
+<header>
+<h1>Galleri</h1>
+<p class="subtitle">
+Stemninger fra Petite Maison og Revin
+</p>
+</header>
+
+<div class="gallery">
+
+<div>
+<img src="images/hus.jpg" alt="Petite Maison">
+<div class="caption">Petite Maison</div>
+</div>
+
+<div>
+<img src="images/udsigt.jpg" alt="Udsigt">
+<div class="caption">Udsigt over området</div>
+</div>
+
+<div>
+<img src="images/bystemning.jpg" alt="Revin">
+<div class="caption">Hyggelig bystemning i Revin</div>
+</div>
+
+</div>
+
+<footer>
+Petite Maison · Revin · Ardennerne · Frankrig
+</footer>
+
+</body>
+</html>
+```
 
