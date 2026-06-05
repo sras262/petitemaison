@@ -5,201 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Petite Maison</title>
-
 <style>
-:root{
-  --green:#6f7650;
-  --dark:#2f2a23;
-  --cream:#faf7f1;
-  --soft:#efe8da;
-}
-
+:root{--green:#6f7650;--dark:#2f2a23;--cream:#faf7f1;--soft:#efe8da}
 *{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:Georgia,"Times New Roman",serif;
-  color:var(--dark);
-  background:var(--cream);
-  line-height:1.6;
-}
-
-nav{
-  position:absolute;
-  top:0;
-  width:100%;
-  z-index:10;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:22px 7%;
-  color:white;
-}
-
-.logo{
-  font-size:34px;
-  font-style:italic;
-  text-shadow:0 2px 8px rgba(0,0,0,.35);
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:24px;
-  font-size:18px;
-  text-shadow:0 2px 8px rgba(0,0,0,.45);
-}
-
-.hero{
-  min-height:88vh;
-  background:
-    linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.42)),
-    url("oversigt.jpg") center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
-  padding:120px 20px 70px;
-}
-
-.hero h1{
-  font-size:82px;
-  font-weight:normal;
-  font-style:italic;
-  margin:0;
-  text-shadow:0 4px 15px rgba(0,0,0,.55);
-}
-
-.decor{
-  font-size:28px;
-  margin:5px 0 18px;
-  opacity:.9;
-}
-
-.hero p{
-  font-size:28px;
-  margin:6px 0;
-  text-shadow:0 3px 12px rgba(0,0,0,.55);
-}
-
-.button{
-  display:inline-block;
-  margin-top:24px;
-  background:var(--green);
-  color:white;
-  text-decoration:none;
-  padding:14px 30px;
-  border-radius:28px;
-  font-size:18px;
-  box-shadow:0 5px 18px rgba(0,0,0,.25);
-}
-
-section{
-  max-width:1100px;
-  margin:0 auto;
-  padding:65px 24px;
-}
-
-h2{
-  text-align:center;
-  font-size:38px;
-  font-weight:normal;
-  color:var(--green);
-  margin:0 0 10px;
-}
-
-.center{
-  text-align:center;
-  max-width:760px;
-  margin:0 auto 35px;
-  font-size:19px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:rgba(255,255,255,.76);
-  padding:30px;
-  border-radius:16px;
-  box-shadow:0 8px 30px rgba(0,0,0,.06);
-}
-
-ul{
-  margin:0;
-  padding-left:22px;
-}
-
-li{
-  margin:9px 0;
-}
-
-.gallery img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
-  border-radius:12px;
-  display:block;
-}
-
-.gallery p{
-  text-align:center;
-  margin:8px 0 0;
-}
-
-.calendar iframe{
-  width:100%;
-  height:620px;
-  border:0;
-  border-radius:14px;
-  background:white;
-  box-shadow:0 8px 30px rgba(0,0,0,.06);
-}
-
-.contact{
-  max-width:none;
-  background:linear-gradient(90deg,#d9d8c6,#f4efe4);
-  text-align:center;
-}
-
-footer{
-  background:var(--green);
-  color:white;
-  text-align:center;
-  padding:18px;
-}
-
-@media(max-width:760px){
-  nav{
-    flex-direction:column;
-    gap:10px;
-    padding:18px;
-  }
-
-  nav a{
-    margin:0 8px;
-    font-size:15px;
-  }
-
-  .logo{
-    font-size:28px;
-  }
-
-  .hero h1{
-    font-size:52px;
-  }
-
-  .hero p{
-    font-size:21px;
-  }
-
-  section{
-    padding:45px 18px;
-  }
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--dark);background:var(--cream);line-height:1.6}
+nav{position:absolute;top:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 7%;color:white}
+.logo{font-size:34px;font-style:italic;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+nav a{color:white;text-decoration:none;margin-left:24px;font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,.45)}
+.hero{min-height:82vh;background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.42)),url("oversigt.jpg") center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:120px 20px 70px}
+.hero h1{font-size:82px;font-weight:normal;font-style:italic;margin:0;text-shadow:0 4px 15px rgba(0,0,0,.55)}
+.decor{font-size:28px;margin:5px 0 18px;opacity:.9}
+.hero p{font-size:28px;margin:6px 0;text-shadow:0 3px 12px rgba(0,0,0,.55)}
+.button{display:inline-block;margin-top:22px;background:var(--green);color:white;text-decoration:none;padding:14px 30px;border-radius:28px;font-size:18px;box-shadow:0 5px 18px rgba(0,0,0,.25)}
+section{max-width:1120px;margin:0 auto;padding:58px 24px}
+h2{text-align:center;font-size:38px;font-weight:normal;color:var(--green);margin:0 0 12px}
+.center{text-align:center;max-width:760px;margin:0 auto 35px;font-size:19px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:rgba(255,255,255,.78);padding:28px;border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+ul{margin:0;padding-left:22px}
+li{margin:8px 0}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:14px;display:block}
+.gallery p{text-align:center;margin:8px 0 0}
+.bottom-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.calendar iframe{width:100%;height:390px;border:0;border-radius:14px;background:white;box-shadow:0 8px 30px rgba(0,0,0,.06)}
+.contactbox{text-align:center;background:linear-gradient(90deg,#d9d8c6,#f4efe4);border-radius:18px;padding:34px}
+footer{background:var(--green);color:white;text-align:center;padding:18px}
+@media(max-width:800px){
+nav{flex-direction:column;gap:10px;padding:18px}
+nav a{margin:0 7px;font-size:15px}
+.logo{font-size:28px}
+.hero h1{font-size:52px}
+.hero p{font-size:21px}
+.bottom-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -209,7 +46,6 @@ footer{
 <nav>
   <div class="logo">Petite Maison</div>
   <div>
-    <a href="#forside">Forside</a>
     <a href="#huset">Huset</a>
     <a href="#galleri">Galleri</a>
     <a href="#kalender">Kalender</a>
@@ -217,7 +53,7 @@ footer{
   </div>
 </nav>
 
-<header class="hero" id="forside">
+<header class="hero">
   <div>
     <h1>Petite Maison</h1>
     <div class="decor">♡</div>
@@ -229,15 +65,16 @@ footer{
 
 <section>
   <h2>Velkommen</h2>
-  <div class="decor" style="text-align:center;color:#8a8f6a;">♡</div>
   <p class="center">
     Petite Maison er et hyggeligt stenhus i Revin med plads til op til 6 personer.
     Lige neden for enden af gaden løber floden, og fra den lille have er der udsigt
     til bjergene omkring byen.
   </p>
+</section>
 
+<section id="huset">
   <div class="grid">
-    <div class="card" id="huset">
+    <div class="card">
       <h2>Huset</h2>
       <ul>
         <li>Plads til op til 6 personer</li>
@@ -250,23 +87,8 @@ footer{
         <li>Tæt på Revins ugentlige tirsdagsmarked</li>
       </ul>
     </div>
-
     <div class="card">
-      <p>
-        Revin ligger i de franske Ardenner, omgivet af skove, bakker og
-        Meuse-dalen. Området er velegnet til ro, vandreture, cykling og
-        små udflugter i det nordlige Frankrig.
-      </p>
-      <div class="grid gallery">
-        <div>
-          <img src="hus.jpg" alt="Petite Maison">
-          <p>Huset</p>
-        </div>
-        <div>
-          <img src="udsigt.jpg" alt="Udsigt">
-          <p>Udsigt</p>
-        </div>
-      </div>
+      <img src="hus.jpg" alt="Petite Maison" style="width:100%;height:310px;object-fit:cover;border-radius:14px;">
     </div>
   </div>
 </section>
@@ -274,33 +96,27 @@ footer{
 <section id="galleri">
   <h2>Galleri</h2>
   <div class="grid gallery">
-    <div>
-      <img src="hus.jpg" alt="Petite Maison">
-      <p>Huset</p>
-    </div>
-    <div>
-      <img src="udsigt.jpg" alt="Udsigt">
-      <p>Udsigt</p>
-    </div>
-    <div>
-      <img src="bystemning.jpg" alt="Revin bystemning">
-      <p>Revin – bystemning</p>
-    </div>
+    <div><img src="hus.jpg" alt="Huset"><p>Huset</p></div>
+    <div><img src="udsigt.jpg" alt="Udsigt"><p>Udsigt</p></div>
+    <div><img src="bystemning.jpg" alt="Revin bystemning"><p>Revin – bystemning</p></div>
   </div>
 </section>
 
-<section id="kalender" class="calendar">
-  <h2>Kalender</h2>
-  <p class="center">Se ledige og optagede perioder.</p>
-  <iframe src="https://calendar.google.com/calendar/embed?src=27332816b6205b854aeaebb5939ff9bf247e2d4df858960b3fd91fdaf118e93d%40group.calendar.google.com&ctz=Europe%2FCopenhagen"></iframe>
-</section>
+<section>
+  <div class="bottom-grid">
+    <div class="contactbox" id="kontakt">
+      <h2>Booking og kontakt</h2>
+      <div class="decor" style="color:#8a8f6a;">♡</div>
+      <p>Har du spørgsmål eller ønsker du at reservere ophold?</p>
+      <a class="button" href="mailto:stig@rasmussen.dk?subject=Booking%20Petite%20Maison">Kontakt Petite Maison</a>
+      <p>stig@rasmussen.dk</p>
+    </div>
 
-<section class="contact" id="kontakt">
-  <h2>Booking og kontakt</h2>
-  <div class="decor" style="color:#8a8f6a;">♡</div>
-  <p>Har du spørgsmål eller ønsker du at reservere ophold?</p>
-  <a class="button" href="mailto:stig@rasmussen.dk?subject=Booking%20Petite%20Maison">Kontakt Petite Maison</a>
-  <p>stig@rasmussen.dk</p>
+    <div class="calendar" id="kalender">
+      <h2>Kalender</h2>
+      <iframe src="https://calendar.google.com/calendar/embed?src=27332816b6205b854aeaebb5939ff9bf247e2d4df858960b3fd91fdaf118e93d%40group.calendar.google.com&ctz=Europe%2FCopenhagen"></iframe>
+    </div>
+  </div>
 </section>
 
 <footer>
