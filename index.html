@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -6,146 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Petite Maison</title>
-
 <style>
-body {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-    color: #333;
-}
-
-header {
-    text-align: center;
-    padding: 40px 0;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    color: #666;
-}
-
-section {
-    margin: 50px 0;
-}
-
-.card {
-    background: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.contact {
-    background: #f0f4f5;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.booking-button {
-    display: inline-block;
-    background: #2c6e49;
-    color: white;
-    text-decoration: none;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.booking-button:hover {
-    opacity: 0.9;
-}
-
-footer {
-    margin-top: 60px;
-    text-align: center;
-    color: #666;
-}
+body{margin:0;font-family:Georgia,serif;color:#2f2a23;background:#faf7f1}
+nav{position:fixed;top:0;width:100%;background:rgba(250,247,241,.9);padding:15px;text-align:center;z-index:10}
+nav a{margin:0 18px;color:#2f2a23;text-decoration:none}
+.hero{height:90vh;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url("images/oversigt.jpg") center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:white}
+.hero h1{font-size:78px;font-weight:normal;margin:0}
+.hero p{font-size:28px}
+.button{display:inline-block;background:#7b8060;color:white;padding:14px 28px;border-radius:30px;text-decoration:none;margin-top:15px}
+section{max-width:1050px;margin:auto;padding:70px 25px}
+h2{text-align:center;font-weight:normal;font-size:36px;color:#6d7252}
+.intro{text-align:center;font-size:20px;max-width:760px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:white;border-radius:14px;padding:22px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:12px}
+.gallery p{text-align:center}
+iframe{width:100%;height:620px;border:0;border-radius:12px;background:white}
+.contact{text-align:center;background:#e9e6d8}
+footer{text-align:center;padding:30px;color:#777}
+@media(max-width:700px){.hero h1{font-size:48px}.hero p{font-size:20px}nav a{margin:0 7px}}
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Petite Maison</h1>
-    <p class="subtitle">
-        Charmerende stenhus i Revin i de franske Ardenner
-    </p>
+<nav>
+<a href="#forside">Forside</a>
+<a href="#huset">Huset</a>
+<a href="#galleri">Galleri</a>
+<a href="#kalender">Kalender</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
+<header class="hero" id="forside">
+<div>
+<h1>Petite Maison</h1>
+<p>Et lille hus i de franske Ardenner</p>
+<p>Ro, natur og fransk landsbyliv</p>
+<a class="button" href="#kontakt">Kontakt for booking</a>
+</div>
 </header>
 
-<section class="card">
-    <h2>Velkommen</h2>
-
-    <p>
-        Velkommen til Petite Maison i Revin.
-    </p>
-
-    <p>
-        Petite Maison er et hyggeligt stenhus med plads til op til 6 personer.
-        Huset ligger i en autentisk fransk by omgivet af skove, bakker og den
-        smukke Meuse-dal.
-    </p>
-
-    <p>
-        Lige neden for enden af gaden løber floden, og fra den lille have bag
-        huset er der udsigt til bjergene omkring byen.
-    </p>
-
-    <p>
-        Huset ligger tæt på Revins ugentlige tirsdagsmarked, hvor lokale
-        producenter sælger frugt, grøntsager, oste og andre specialiteter.
-    </p>
-</section>
-
 <section>
-    <h2>Huset</h2>
-
-    <ul>
-        <li>Plads til op til 6 personer</li>
-        <li>Stue</li>
-        <li>Køkken</li>
-        <li>Badeværelse</li>
-        <li>Lille veranda</li>
-        <li>Kælder</li>
-        <li>2 værelser på 1. sal</li>
-        <li>Yderligere værelse på 2. sal under etablering</li>
-        <li>Lille have med udsigt til bjergene</li>
-    </ul>
+<h2>Velkommen</h2>
+<p class="intro">
+Petite Maison er et hyggeligt stenhus i Revin med plads til op til 6 personer.
+Lige neden for enden af gaden løber floden, og fra den lille have er der udsigt
+til bjergene omkring byen.
+</p>
 </section>
 
-<section class="contact">
-    <h2>Booking og kontakt</h2>
+<section id="huset">
+<h2>Huset</h2>
+<div class="grid">
+<div class="card">
+<ul>
+<li>Plads til op til 6 personer</li>
+<li>Stue, køkken og badeværelse</li>
+<li>Lille veranda</li>
+<li>Kælder</li>
+<li>2 værelser på 1. sal</li>
+<li>Værelse på 2. sal under etablering</li>
+<li>Lille have med udsigt til bjergene</li>
+<li>Tæt på Revins ugentlige tirsdagsmarked</li>
+</ul>
+</div>
+<div class="card">
+<p>
+Revin ligger i de franske Ardenner, omgivet af skove, bakker og Meuse-dalen.
+Området er velegnet til ro, vandreture, cykling og små udflugter i det nordlige Frankrig.
+</p>
+</div>
+</div>
+</section>
 
-    <p>
-        Har du spørgsmål eller ønsker du at reservere ophold?
-    </p>
+<section id="galleri">
+<h2>Galleri</h2>
+<div class="grid gallery">
+<div>
+<img src="images/hus.jpg" alt="Petite Maison">
+<p>Huset</p>
+</div>
+<div>
+<img src="images/udsigt.jpg" alt="Udsigt fra huset">
+<p>Udsigt</p>
+</div>
+<div>
+<img src="images/bystemning.jpg" alt="Hyggelig bystemning i Revin">
+<p>Revin – bystemning</p>
+</div>
+</div>
+</section>
 
-    <a class="booking-button"
-       href="mailto:stig@rasmussen.dk?subject=Booking%20Petite%20Maison">
-       Kontakt Petite Maison
-    </a>
+<section id="kalender">
+<h2>Kalender</h2>
+<p class="intro">Se ledige og optagede perioder.</p>
+<br>
+<iframe src="https://calendar.google.com/calendar/embed?src=27332816b6205b854aeaebb5939ff9bf247e2d4df858960b3fd91fdaf118e93d%40group.calendar.google.com&ctz=Europe%2FCopenhagen"></iframe>
+</section>
 
-    <p style="margin-top:20px;">
-        E-mail: stig@rasmussen.dk
-    </p>
+<section class="contact" id="kontakt">
+<h2>Booking og kontakt</h2>
+<p>Har du spørgsmål eller ønsker du at reservere ophold?</p>
+<a class="button" href="mailto:stig@rasmussen.dk?subject=Booking%20Petite%20Maison">Kontakt Petite Maison</a>
+<p>stig@rasmussen.dk</p>
 </section>
 
 <footer>
-    <p>Petite Maison · Revin · Ardennerne · Frankrig</p>
+Petite Maison · Revin · Ardennerne · Frankrig
 </footer>
 
 </body>
 </html>
-```
