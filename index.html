@@ -5,36 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Petite Maison</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-:root{--green:#6f7650;--dark:#2f2a23;--cream:#faf7f1;--soft:#efe8da}
+:root{--green:#6f7650;--dark:#2f2a23;--cream:#faf7f1}
 *{box-sizing:border-box}
 body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--dark);background:var(--cream);line-height:1.6}
+
 nav{position:absolute;top:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 7%;color:white}
-.logo{font-size:34px;font-style:italic;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.logo{font-family:"Playfair Display",serif;font-size:34px;font-style:italic;text-shadow:0 2px 8px rgba(0,0,0,.35)}
 nav a{color:white;text-decoration:none;margin-left:24px;font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,.45)}
+
 .hero{min-height:82vh;background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.42)),url("oversigt.jpg") center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:120px 20px 70px}
-.hero h1{font-size:82px;font-weight:normal;font-style:italic;margin:0;text-shadow:0 4px 15px rgba(0,0,0,.55)}
+.hero h1{font-family:"Playfair Display",serif;font-size:92px;font-weight:normal;font-style:italic;margin:0;text-shadow:0 4px 15px rgba(0,0,0,.55)}
 .decor{font-size:28px;margin:5px 0 18px;opacity:.9}
 .hero p{font-size:28px;margin:6px 0;text-shadow:0 3px 12px rgba(0,0,0,.55)}
+
 .button{display:inline-block;margin-top:22px;background:var(--green);color:white;text-decoration:none;padding:14px 30px;border-radius:28px;font-size:18px;box-shadow:0 5px 18px rgba(0,0,0,.25)}
-section{max-width:1120px;margin:0 auto;padding:58px 24px}
-h2{text-align:center;font-size:38px;font-weight:normal;color:var(--green);margin:0 0 12px}
+section{max-width:1120px;margin:0 auto;padding:45px 24px}
+h2{font-family:"Playfair Display",serif;text-align:center;font-size:42px;font-weight:normal;color:var(--green);margin:0 0 12px}
 .center{text-align:center;max-width:760px;margin:0 auto 35px;font-size:19px}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
 .card{background:rgba(255,255,255,.78);padding:28px;border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,.06)}
 ul{margin:0;padding-left:22px}
 li{margin:8px 0}
+
 .gallery img{width:100%;height:230px;object-fit:cover;border-radius:14px;display:block}
 .gallery p{text-align:center;margin:8px 0 0}
+
 .bottom-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
 .calendar iframe{width:100%;height:390px;border:0;border-radius:14px;background:white;box-shadow:0 8px 30px rgba(0,0,0,.06)}
 .contactbox{text-align:center;background:linear-gradient(90deg,#d9d8c6,#f4efe4);border-radius:18px;padding:34px}
 footer{background:var(--green);color:white;text-align:center;padding:18px}
+
 @media(max-width:800px){
 nav{flex-direction:column;gap:10px;padding:18px}
 nav a{margin:0 7px;font-size:15px}
 .logo{font-size:28px}
-.hero h1{font-size:52px}
+.hero h1{font-size:56px}
 .hero p{font-size:21px}
 .bottom-grid{grid-template-columns:1fr}
 }
@@ -53,8 +63,6 @@ nav a{margin:0 7px;font-size:15px}
   </div>
 </nav>
 
-    
-</div>
 <header class="hero">
   <div>
     <h1>Petite Maison</h1>
@@ -73,6 +81,7 @@ nav a{margin:0 7px;font-size:15px}
     til bjergene omkring byen.
   </p>
 </section>
+
 <section id="huset">
   <div class="grid">
     <div class="card">
@@ -82,7 +91,7 @@ nav a{margin:0 7px;font-size:15px}
         <li>Stue, køkken og badeværelse</li>
         <li>2 værelser på 1. sal</li>
         <li>Lille veranda</li>
-        <li>Kælder</li>     
+        <li>Kælder</li>
         <li>Lille have med udsigt til bjergene</li>
         <li>Tæt på Revins ugentlige tirsdagsmarked</li>
       </ul>
@@ -100,11 +109,11 @@ nav a{margin:0 7px;font-size:15px}
     <div><img src="udsigt.jpg" alt="Udsigt"><p>Udsigt</p></div>
     <div><img src="bystemning.jpg" alt="Revin bystemning"><p>Revin – bystemning</p></div>
   </div>
+
+  <div style="text-align:center;margin-top:35px;">
+    <a href="galleri.html" class="button">Se hele galleriet →</a>
+  </div>
 </section>
-    <div style="text-align:center;margin-top:35px;">
-  <a href="galleri.html" class="button">
-    Se hele galleriet →
-  </a>
 
 <section>
   <div class="bottom-grid">
@@ -113,11 +122,11 @@ nav a{margin:0 7px;font-size:15px}
       <div class="decor" style="color:#8a8f6a;">♡</div>
       <p>Har du spørgsmål eller ønsker du at reservere ophold?</p>
       <a class="button" href="mailto:stig@rasmussen.dk?subject=Forespørgsel%20Petite%20Maison">Kontakt Petite Maison</a>
-          </div>
+    </div>
 
     <div class="calendar" id="kalender">
       <h2>Kalender</h2>
-      <iframe src="https://calendar.google.com/calendar/embed?src=27332816b6205b854aeaebb5939ff9bf247e2d4df858960b3fd91fdaf118e93d%40group.calendar.google.com&ctz=Europe%2FCopenhagen" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://calendar.google.com/calendar/embed?src=27332816b6205b854aeaebb5939ff9bf247e2d4df858960b3fd91fdaf118e93d%40group.calendar.google.com&ctz=Europe%2FCopenhagen"></iframe>
     </div>
   </div>
 </section>
