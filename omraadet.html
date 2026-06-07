@@ -20,7 +20,13 @@ h2{font-size:38px;margin-top:55px}
 .container{max-width:1150px;margin:auto;padding:20px}
 .categories{text-align:center;margin:25px 0 35px}
 .categories a{display:inline-block;margin:6px;padding:10px 16px;background:#e9e6d8;color:#2f2a23;text-decoration:none;border-radius:22px}
-.map{height:430px;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08);margin:25px 0 50px}
+.map{
+height:350px;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+margin:25px 0 50px;
+}
 .item{background:white;padding:22px;border-radius:16px;margin:18px 0;box-shadow:0 6px 24px rgba(0,0,0,.05)}
 .item h3{margin-top:0;color:#6f7650}
 .item a{color:#6f7650}
@@ -196,16 +202,11 @@ Petite Maison · Revin · Ardennerne · Frankrig
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const places = [
-  ["Petite Maison / Revin",49.9406,4.6350],
-  ["Mont Malgré-Tout",49.9355,4.6650],
-  ["Panorama de la Faligeotte",49.9368,4.6535],
-  ["Maison Espagnole",49.9400,4.6360],
-  ["Marina de Revin",49.9415,4.6315],
-  ["Lac des Vieilles Forges",49.8875,4.6000],
-  ["Lac de Bairon",49.5120,4.7570],
-  ["Le Relais du C’Routard",49.9408,4.6350],
-  ["Intermarché Revin",49.9365,4.6460],
-  ["Lidl Revin",49.9390,4.6500]
+  ["📍 Petite Maison / Revin",49.9406,4.6350],
+  ["🌲 Natur & udsigt",49.9360,4.6600],
+  ["🏖 Lac des Vieilles Forges",49.8875,4.6000],
+  ["🏖 Lac de Bairon",49.5120,4.7570],
+  ["☕ Caféer & restauranter",49.9405,4.6355]
 ];
 
 function makeMap(id){
