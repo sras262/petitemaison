@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Området - Petite Maison</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<style>
+body{margin:0;font-family:Georgia,serif;background:#faf7f1;color:#2f2a23;line-height:1.6}
+nav{background:#6f7650;padding:18px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 15px}
+header{text-align:center;padding:55px 20px 30px}
+h1,h2{font-family:"Playfair Display",serif;font-weight:normal;color:#6f7650}
+h1{font-size:72px;margin:0}
+h2{font-size:38px;margin-top:55px}
+.container{max-width:1150px;margin:auto;padding:20px}
+.categories{text-align:center;margin:25px 0 35px}
+.categories a{display:inline-block;margin:6px;padding:10px 16px;background:#e9e6d8;color:#2f2a23;text-decoration:none;border-radius:22px}
+.map{height:430px;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08);margin:25px 0 50px}
+.item{background:white;padding:22px;border-radius:16px;margin:18px 0;box-shadow:0 6px 24px rgba(0,0,0,.05)}
+.item h3{margin-top:0;color:#6f7650}
+.item a{color:#6f7650}
+.button{display:inline-block;background:#6f7650;color:white;text-decoration:none;padding:14px 30px;border-radius:28px;margin-top:20px}
+footer{text-align:center;padding:35px;color:#666}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Forside</a>
+<a href="omraadet.html">Området</a>
+<a href="galleri.html">Galleri</a>
+<a href="index.html#kalender">Kalender</a>
+<a href="index.html#kontakt">Kontakt</a>
+</nav>
+
+<header>
+<h1>Området</h1>
+<p>Oplevelser, natur, caféer og praktiske steder omkring Revin</p>
+</header>
+
+<div class="container">
+
+<div class="categories">
+<a href="#natur">Natur & udsigt</a>
+<a href="#revin">Revin & historie</a>
+<a href="#vand">Søer & vand</a>
+<a href="#cafeer">Caféer</a>
+<a href="#restauranter">Restauranter</a>
+<a href="#indkoeb">Indkøb</a>
+<a href="#marked">Marked</a>
+</div>
+
+<div id="map1" class="map"></div>
+
+<h2 id="natur">Natur & udsigt</h2>
+
+<div class="item">
+<h3>Mont Malgré-Tout</h3>
+<p>Et af de mest kendte udsigtspunkter ved Revin. Herfra får man flot udsigt over Meuse-dalen og de skovklædte Ardenner.</p>
+<p><a href="https://www.ardennes.com/en/Natural-Heritage/the-mountain-despite-everything-and-its-viewpoints/" target="_blank">Turistinformation</a> · <a href="https://www.google.com/maps/search/Mont+Malgré-Tout+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Panorama de la Faligeotte</h3>
+<p>Et fint udsigtspunkt på Mont Malgré-Tout. Godt til en kort tur, fotos og en pause med udsigt over landskabet.</p>
+<p><a href="https://www.google.com/maps/search/Panorama+de+la+Faligeotte+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Voie Verte Trans-Ardennes</h3>
+<p>Cykel- og vandrerute langs Meuse. Ruten går gennem Revin og er oplagt til rolige ture langs floden.</p>
+<p><a href="https://www.valdardennetourisme.com/en/incontournables-du-val-dardenne/villes-et-villages/revin/" target="_blank">Turistinformation</a> · <a href="https://www.google.com/maps/search/Voie+Verte+Trans-Ardennes+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<h2 id="revin">Revin & historie</h2>
+
+<div class="item">
+<h3>Revin og de små gyder</h3>
+<p>Den gamle del af Revin har små gader, passager og en rolig fransk bystemning. God til en kort aftentur.</p>
+<p><a href="https://www.valdardennetourisme.com/en/Revin-and-its-alleys/" target="_blank">Læs mere</a> · <a href="https://www.google.com/maps/search/Vieux+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Maison Espagnole</h3>
+<p>Historisk bindingsværkshus fra 1500-tallet og et af Revins kendte vartegn.</p>
+<p><a href="https://www.google.com/maps/search/Maison+Espagnole+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Marina de Revin</h3>
+<p>Den lille flodhavn ved Meuse. Et hyggeligt sted at gå en tur, se både og opleve livet langs floden.</p>
+<p><a href="https://www.google.com/maps/search/Marina+de+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<h2 id="vand">Søer & vand</h2>
+
+<div class="item">
+<h3>Meuse-floden</h3>
+<p>Floden løber lige neden for enden af gaden. Med egen kano eller kajak kan Meuse være en mulighed for erfarne brugere, men tjek altid lokale forhold, vandstand og adgang før turen.</p>
+<p><a href="https://www.google.com/maps/search/Meuse+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Lac des Vieilles Forges</h3>
+<p>Ca. 10-15 minutter fra Revin. Stor skovsø med strand, badning, vandreture og mulighed for kano/kajak, paddleboard og andre vandaktiviteter.</p>
+<p><a href="https://www.lacdesvieillesforges.fr/en" target="_blank">Officiel side</a> · <a href="https://www.cap-ardennes-events.fr/en/activites/en-canoe-kayak-rental-vieilles-forges-lake/" target="_blank">Kano/kajak</a> · <a href="https://www.google.com/maps/search/Lac+des+Vieilles+Forges" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Lac de Bairon</h3>
+<p>Ca. 30 minutter fra Revin. Søområde med strand, natur, fugleliv og gode muligheder for en rolig dagstur.</p>
+<p><a href="https://www.google.com/maps/search/Lac+de+Bairon" target="_blank">Google Maps</a></p>
+</div>
+
+<h2 id="cafeer">Caféer</h2>
+
+<div class="item">
+<h3>Le Relais du C’Routard</h3>
+<p>Hyggelig café-restaurant i Revin med hjemmelavet mad og afslappet stemning.</p>
+<p><a href="https://www.lerelaisducroutard.com/en-fr/" target="_blank">Hjemmeside</a> · <a href="https://www.google.com/maps/search/Le+Relais+du+C’Routard+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Le Garibaldi</h3>
+<p>Lille bar/café i Revin. God til en drink, kaffe eller en rolig pause sidst på dagen.</p>
+<p><a href="https://www.google.com/maps/search/Le+Garibaldi+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<h2 id="restauranter">Restauranter</h2>
+
+<div class="item">
+<h3>La Trattoria</h3>
+<p>Uformel restaurant i Revin. God til en enkel middag tæt på huset.</p>
+<p><a href="https://www.google.com/maps/search/La+Trattoria+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>La Bonne Source</h3>
+<p>Klassisk restaurant i Revin med lokal atmosfære.</p>
+<p><a href="https://www.google.com/maps/search/La+Bonne+Source+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>La Table du Pays</h3>
+<p>Restaurant i Laifour, få minutter fra Revin. Velegnet til en lidt længere frokost eller middag i området.</p>
+<p><a href="https://www.google.com/maps/search/La+Table+du+Pays+Laifour" target="_blank">Google Maps</a></p>
+</div>
+
+<h2 id="indkoeb">Indkøb</h2>
+
+<div class="item">
+<h3>Intermarché Revin</h3>
+<p>Større supermarked til almindelige indkøb, madvarer og praktiske ting til opholdet.</p>
+<p><a href="https://www.google.com/maps/search/Intermarché+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Lidl Revin</h3>
+<p>Prisvenligt supermarked med dagligvarer og basisvarer.</p>
+<p><a href="https://www.google.com/maps/search/Lidl+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<div class="item">
+<h3>Lokale småbutikker</h3>
+<p>I centrum findes små butikker og nærbutikker til hurtige indkøb, frugt, grønt og lokale varer.</p>
+<p><a href="https://www.google.com/maps/search/grocery+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<h2 id="marked">Marked</h2>
+
+<div class="item">
+<h3>Tirsdagsmarkedet i Revin</h3>
+<p>Det ugentlige marked ligger tæt på huset og er oplagt til frisk brød, ost, grønt og lidt lokal stemning.</p>
+<p><a href="https://www.google.com/maps/search/Place+de+la+République+Revin" target="_blank">Google Maps</a></p>
+</div>
+
+<h2>Kort</h2>
+<div id="map2" class="map"></div>
+
+<div style="text-align:center;">
+<a href="index.html" class="button">← Tilbage til forsiden</a>
+</div>
+
+</div>
+
+<footer>
+Petite Maison · Revin · Ardennerne · Frankrig
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const places = [
+  ["Petite Maison / Revin",49.9406,4.6350],
+  ["Mont Malgré-Tout",49.9355,4.6650],
+  ["Panorama de la Faligeotte",49.9368,4.6535],
+  ["Maison Espagnole",49.9400,4.6360],
+  ["Marina de Revin",49.9415,4.6315],
+  ["Lac des Vieilles Forges",49.8875,4.6000],
+  ["Lac de Bairon",49.5120,4.7570],
+  ["Le Relais du C’Routard",49.9408,4.6350],
+  ["Intermarché Revin",49.9365,4.6460],
+  ["Lidl Revin",49.9390,4.6500]
+];
+
+function makeMap(id){
+  const map = L.map(id).setView([49.86,4.62],10);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
+    maxZoom:19,
+    attribution:"&copy; OpenStreetMap"
+  }).addTo(map);
+
+  places.forEach(p=>{
+    L.marker([p[1],p[2]]).addTo(map).bindPopup(p[0]);
+  });
+}
+
+makeMap("map1");
+makeMap("map2");
+</script>
+
+</body>
+</html>
